@@ -1,4 +1,12 @@
-export default function createIteratorObject(report) {
-    return Object.values(report.allEmployees)
-           .reduce((acc, item) => acc.concat(item), []);;
+export default function createIteratorObject(report)
+{
+  let allEmployees = [];
+  for (const item of Object.values(report.allEmployees))
+	{
+    allEmployees = [
+      ...allEmployees,
+      ...item,
+    ];
+  }
+  return allEmployees;
 }
