@@ -29,6 +29,3 @@
     "sinon": "^7.5.0"
   }
 }
-"scripts": {
-  "test": "mocha"
-}
