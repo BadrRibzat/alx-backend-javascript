@@ -84,3 +84,4 @@ describe('#calculateNumber() with type DIVIDE', () => {
     assert.equal(calculateNumber('DIVIDE', -88.5, -3.6), 22);
   });
 });
+

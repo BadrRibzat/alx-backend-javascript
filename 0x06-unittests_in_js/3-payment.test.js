@@ -18,3 +18,4 @@ describe('sendPaymentRequestToApi function', () => {
     utilSpy.restore()
   });
 });
+

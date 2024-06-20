@@ -3,3 +3,4 @@ function calculateNumber(a, b) {
 };
 
 module.exports = calculateNumber;
+

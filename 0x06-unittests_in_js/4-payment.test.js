@@ -1,3 +1,16 @@
+const Utils = require('./utils');
+
+function sendPaymentRequestToApi(totalAmount, totalShipping) {
+    const result = Utils.calculateNumber('SUM', totalAmount, totalShipping);
+    console.log(`The total is: ${result}`);
+}
+  
+module.exports = sendPaymentRequestToApi;
+root@429eb2a027da:/alx-backend-javascript/0x06-unittests_in_js# rm 4-payment.js root@429eb2a027da:/alx-backend-javascript/0x06-unittests_in_js# vi 4-payment.js
+root@429eb2a027da:/alx-backend-javascript/0x06-unittests_in_js# clear
+
+
+root@429eb2a027da:/alx-backend-javascript/0x06-unittests_in_js# cat 4-payment.test.js 
 const { expect } = require('chai');
 const sinon = require('sinon');
 
@@ -22,3 +35,4 @@ describe('sendPaymentRequestToApi', () => {
     consoleSpy.restore();
   });
 });
+
